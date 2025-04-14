@@ -1,0 +1,346 @@
+/* GENERAL STYLES */
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #210F37;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* REMOVE position: fixed */
+  /* REMOVE height: 100% */
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+@font-face /*  Specifies Custom Font to display the text */ {
+  font-family: myFirstFont;
+  src: url(fonts/EMcomic-Bold.ttf);
+}
+
+/* NAVBAR SECTION */
+.navbar-expand-lg {
+  height: 150px;
+  background-color: #FDFFC2 !important; /* Your specified color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: "elinga", "myFirstFont", "Roboto";
+  font-weight: 500;
+  font-size: 56px;
+  color: rgb(0, 0, 0) !important;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: #000000 !important; /* Black text for contrast */
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-link:hover {
+  color: #FF6000 !important; /* Orange color on hover */
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.fixed-top {
+  z-index: 11;
+}
+
+/* CONTACT SECTION STYLING */
+.icon img, .icon1 img {
+  width: 3rem;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact {
+  position: relative;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), 
+              url('../images/bg.webp') no-repeat center center;
+  background-size: cover;
+}
+
+.contact .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: beige;
+}
+
+.contact .content p {
+  padding-top: 4px;
+  font-size: 26px;
+  font-weight: 275;
+  color: beige;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 25px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 4.5rem;
+  height: 4.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: bisque;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #592b00;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: rgb(245, 245, 166);
+  color: rgba(0, 0, 0, 0.775);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* FOOTER STYLING */
+footer {
+  background-color: #000000 !important;
+  color: #FF6000 !important;
+  padding: 1% 0 1% 0;
+}
+
+.footerHeadingCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  top: 15px;
+  left: 24px;
+}
+
+.footerHeadingCol h2 {
+  font-family: "elinga", "Roboto";
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.footer_clickable:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.socialMediaIcon {
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.contactRow,
+.addressRow {
+  width: 97%;
+  margin: auto;
+}
+
+footer a {
+  color: #FF6000 !important;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+  .navbar-expand-lg {
+    height: auto;
+    padding: 15px;
+  }
+  
+  .navbar-nav {
+    background-color: #ff0707;
+    text-align: right;
+    width: 150px;
+    border-radius: 10%;
+  }
+  
+  .nav-link {
+    color: white !important;
+  }
+  
+  #contactus-container {
+    flex-direction: column-reverse;
+  }
+  
+  .container .contactInfo {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contactForm {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 50px 20px;
+  }
+  
+  .contact .content h2 {
+    font-size: 36px;
+  }
+  
+  .contact .content p {
+    font-size: 20px;
+  }
+  
+  .container .contactInfo .box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container .contactInfo .box .text {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  
+  .contactForm {
+    width: 95%;
+    padding: 20px;
+  }
+  
+  .footerHeadingCol h2 {
+    font-size: 2rem !important;
+  }
+  
+  .socialMediaIcon {
+    font-size: 1.5rem;
+  }
+}
